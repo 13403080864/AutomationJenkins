@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.UserDao">
+    <!-- 查询所有接口 -->
+    <select id="findAll" resultType="com.domian.User">
+        select * from tuser
+    </select>
+
+    <!-- 根据id查询接口 -->
+    <select id="findById" resultType="com.domian.User">
+        select * from tuser where id=#{id}
+    </select>
+
+</mapper>
