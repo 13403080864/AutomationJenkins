@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!-- 套件名字，自己取名字-->
 <suite name="test">
     <!-- test测试的名字，可根基方法来命名，自己取名-->
