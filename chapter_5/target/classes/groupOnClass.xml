@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GroupsOnClass">
+    <test name="runAll">
+        <classes>
+            <!-- class的name是类的全限定类名 -->
+            <class name="testng.groups.GroupOnClass1"/>
+            <class name="testng.groups.GroupOnClass2"/>
+            <class name="testng.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+
+    <test name="onlyRunStu">
+        <!-- groups是指定运行的某一个类 -->
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <!-- class的name是类的全限定类名 -->
+            <class name="testng.groups.GroupOnClass1"/>
+            <class name="testng.groups.GroupOnClass2"/>
+            <class name="testng.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+
+</suite>
